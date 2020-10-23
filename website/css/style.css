@@ -1,0 +1,218 @@
+@font-face{
+  font-family: memories;
+  src : url("../fonts/above_mem/Cherolina.ttf");
+}
+
+@font-face{
+  font-family: date;
+  src : url("../fonts/date/date.ttf");
+}
+
+@font-face{
+  font-family: description;
+  src : url("../fonts/description/des.otf");
+}
+
+@font-face{
+  font-family: caption;
+  src : url("../fonts/figcap/cap.ttf");
+}
+
+@font-face{
+  font-family: heading;
+  src : url("../fonts/header/heading.ttf");
+}
+
+@font-face{
+  font-family: navig;
+  src : url('../fonts/Nav/nav.otf');
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  font-family: navig;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;  
+}
+
+nav a{
+    font-family: navig;
+    font-size: 24px;
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background 0.5s ;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+nav a.active{
+  background-color: rgb(0,0,0);
+}
+
+nav a:first-child{
+  background-color: rgb(0,0,0);
+}
+
+nav a:last-child{
+  float: right;
+}
+
+.background{
+  overflow:hidden;
+  padding: 5% 20% 2% 20%;
+  background-image: url('../backgrounds/Screenshot from 2020-10-22 14-09-55.png');
+  background-repeat: repeat;
+}
+.wish{
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+}
+
+.wish h1,p{
+  margin: -35px;
+  font-weight: normal;
+  font-family: heading;
+  font-size: 140px;
+  text-align: center;
+  color: rgb(0,0,0);
+  text-shadow: 3px 3px rgba(100,100,100,0.6);
+}
+
+.wish h1:first-child{
+  font-size: 90px;
+}
+
+.wish h1:last-child{
+  font-size: 100px;
+}
+
+.wish p{
+  margin: 25px 15px 15px 6px;
+  font-size: 40px;
+  text-align: left;
+  text-shadow: 1px 1px rgba(100,100,100,0.6);
+}
+
+.background img{
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+  width: 32%;
+  border-radius: 10000px;
+  border-color: rgba(255,255,255,1);
+  border-width: 6px;
+  border-style: solid;
+}
+
+section{
+  padding: 5% 10%;
+  margin: 10px 10px 10px 30px;
+
+}
+
+ section p{
+  clear: both;
+  display: block;
+  margin: -52px 10px 10px 10px;
+  font-family: memories;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(0,0,0);
+  text-shadow: 1px 1px rgba(244,194,194,0.6);
+}
+
+.first{
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.second{
+  width: 100%;
+  display: block;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+figure{
+  
+  border-radius: 4px;
+  display: inline-block;
+  width: 13%;
+  height: auto;
+  margin: 2px;
+  float: left;
+  padding: 4px;
+   background-color: rgba(0,0,0,0.1);
+   transition: background 0.5s ;
+   /*transition-delay: 0.2s;*/
+}
+
+
+figure:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+section img{
+  border-radius: 4px;
+  width:95%;
+  transition: width 0.5s ;
+  margin: 0 auto;
+}
+
+
+section img:hover{
+  width: 100%;
+}
+
+figcaption{
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  font-family: caption;
+  font-size: 23px;
+  color: rgb(0,0,0);
+
+}
+
+section a{
+  text-decoration: none;
+}
+
+footer{
+  clear: both;
+}
+/*.clear{
+  clear: left;
+}*/
+
+hr{
+  display: block;
+  margin-top: 20px;
+}
+
+footer{
+  display: block;
+  padding: 1px;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(100,100,100);
+}
